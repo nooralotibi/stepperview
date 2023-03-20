@@ -14,6 +14,7 @@
 		7988CC2729C5102000267EF5 /* stepperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7988CC2629C5102000267EF5 /* stepperTests.swift */; };
 		7988CC3129C5102000267EF5 /* stepperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7988CC3029C5102000267EF5 /* stepperUITests.swift */; };
 		7988CC3329C5102000267EF5 /* stepperUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7988CC3229C5102000267EF5 /* stepperUITestsLaunchTests.swift */; };
+		7988CC4129C5114800267EF5 /* StepperView in Frameworks */ = {isa = PBXBuildFile; productRef = 7988CC4029C5114800267EF5 /* StepperView */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7988CC4129C5114800267EF5 /* StepperView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,6 +147,9 @@
 			dependencies = (
 			);
 			name = stepper;
+			packageProductDependencies = (
+				7988CC4029C5114800267EF5 /* StepperView */,
+			);
 			productName = stepper;
 			productReference = 7988CC1129C5101E00267EF5 /* stepper.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +222,9 @@
 				Base,
 			);
 			mainGroup = 7988CC0829C5101E00267EF5;
+			packageReferences = (
+				7988CC3F29C5114800267EF5 /* XCRemoteSwiftPackageReference "StepperView" */,
+			);
 			productRefGroup = 7988CC1229C5101E00267EF5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -612,6 +620,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7988CC3F29C5114800267EF5 /* XCRemoteSwiftPackageReference "StepperView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/badrinathvm/StepperView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7988CC4029C5114800267EF5 /* StepperView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7988CC3F29C5114800267EF5 /* XCRemoteSwiftPackageReference "StepperView" */;
+			productName = StepperView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7988CC0929C5101E00267EF5 /* Project object */;
 }
